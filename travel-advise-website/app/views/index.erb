@@ -3,9 +3,8 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ -->
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
@@ -18,8 +17,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <img src="/images/yellowstone.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
+
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a>
@@ -44,41 +42,44 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
+    <h1><b>Welcome to Travelogue</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
       <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
-      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
     </div>
     </div>
   </header>
 
   <!-- First Photo Grid-->
+
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/yellowstone.jpg" alt="Yellowstone" style="width:100%" class="w3-hover-opacity">
+    <div class="image-container" style="background:url(/images/yellowstone.jpg)"></div>
+
       <div class="w3-container w3-white">
-        <p><b>Yellowstone National Park </b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b><a href="/">Yosemite National Park </a></b></p>
+        <p>Designated a World Heritage Site in 1984, Yosemite is internationally recognized for its granite cliffs, waterfalls, clear streams, giant sequoia groves, lakes, mountains, glaciers, and biological diversity.Almost 95% of the park is designated wilderness.</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/images/glacier_national_park.jpg" alt="Glacier National Park" style="width:100%" class="w3-hover-opacity">
+    <div class="image-container" style="background:url(/images/glacier_national_park.jpg)"></div>
+
+      <!-- <img src="/images/glacier_national_park.jpg" alt="Glacier National Park" style="width:100%" style="height:20%"  class="w3-hover-opacity"> -->
       <div class="w3-container w3-white">
         <p><b>Glacier National Park</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Glacier National Park is located in the U.S. state of Montana, on the Canada–United States border with the Canadian provinces of Alberta and British Columbia. The park encompasses over 130 named lakes, more than 1,000 different species of plants, and hundreds of species of animals.</p>
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="/images/rocky mountain.jpg" alt="Rocky Mountain" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container ">
+      <div class="image-container" style="background:url(/images/rocky%20mountain.jpg)"></div>
+
+      <!-- <img src="/images/rocky mountain.jpg" alt="Rocky Mountain" style="width:100%" class="w3-hover-opacity"> -->
       <div class="w3-container w3-white">
         <p><b>Rocky Mountain National Park</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Rocky Mountain National Park is located in north-central Colorado, U.S.A. The eastern and westerns slopes of the Continental Divide run directly through the center of the park. The main features of the park include mountains, alpine lakes and a wide variety of wildlife.</p>
       </div>
     </div>
   </div>
@@ -86,24 +87,27 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   <!-- Second Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
+      <div class="image-container" style="background:url(/images/yellow.jpg)"></div>
+      <!-- <img src="/images/yellow.jpg" alt="Yellowstone" style="width:100%" class="w3-hover-opacity"> -->
+    <div class="w3-container w3-white">
+      <p><b>Yellowstone National Park</b></p>
+      <p >Yellowstone National Park is located in the U.S. states of Wyoming, Montana, and Idaho. It was the first National Park in the U.S. The park is known for its wildlife and its many geothermal features, especially Old Faithful geyser.  </p>
     </div>
+  </div>
     <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="image-container" style="background:url(/images/bryce.jpg)"></div>
       <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p><b>Bryce Canyon National Park</b></p>
+        <p>Bryce Canyon National Park is located in southwestern Utah, U.S.A. The major feature of the park is Bryce Canyon, It is distinctive due to geological structures called hoodoos. The red, orange, and white colors of the rocks provide spectacular views. </p>
       </div>
     </div>
+
     <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <div class="image-container" style="background:url(/images/Zion.jpeg)"></div>
+<!--       <img src="/images/Zion.jpeg" alt="Zion" style="width:100%" class="w3-hover-opacity">
+ -->  <div class="w3-container w3-white">
+        <p><b>Zion National Park</b></p>
+        <p>Zion National Park is located in southwestern Utah, U.S.A. The park's unique geography allows for unusual plant and animal diversity. It has about 289 species of birds, 75 mammals (including 19 species of bat), and 32 reptiles inhabit the park's four life zones: desert, riparian, woodland, and coniferous forest. Zion National Park includes mountains, canyons, buttes, mesas, monoliths, rivers, slot canyons, and natural arches.</p>
       </div>
     </div>
   </div>
@@ -135,82 +139,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
     <hr>
 
-    <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-    </div>
-    <p>Web Design</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-    </div>
-    <p>Photoshop</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-    </div>
-    <p>
-      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-        <i class="fa fa-download w3-margin-right"></i>Download Resume
-      </button>
-    </p>
-    <hr>
-
-    <h4>How much I charge</h4>
-    <!-- Pricing Tables -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">1GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-
-      <div class="w3-third">
-        <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">Unlimited Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-large w3-grey">
@@ -247,16 +175,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </form>
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
+<!-- Footer -->
+  <!-- <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
       <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
 
-    <div class="w3-third">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div> -->
+
+    <!-- <div class="w3-third">
       <h3>BLOG POSTS</h3>
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
@@ -270,18 +198,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
           <span>Praes tinci sed</span>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="w3-third">
       <h3>POPULAR TAGS</h3>
       <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Yosemite National Park</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Glacier National Park</span><span class="w3-tag w3-grey w3-small w3-margin-bottom">Rocky Mountain National Park</span><span class="w3-tag w3-grey w3-small w3-margin-bottom">Yellowstone National Park</span><span class="w3-tag w3-grey w3-small w3-margin-bottom">Bryce Canyon National Park</span><span class="w3-tag w3-grey w3-small w3-margin-bottom">Zion National Park</span>
+
       </p>
     </div>
+
 
   </div>
   </footer>
